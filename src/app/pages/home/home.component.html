@@ -1,0 +1,22 @@
+<div class="container">
+
+    <table class="table">
+        <thead>
+          <tr class="table">
+            <th scope="col">ID</th>
+            <th scope="col">Titulo</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of BaseDatos" >
+            <th scope="row">{{data.id}}</th>
+            <td>{{data.title}}</td>
+            <td><button class="btn btn-warning"  (click)="consulta(data.id)" >Detalles</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+</div>

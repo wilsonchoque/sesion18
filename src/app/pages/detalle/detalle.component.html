@@ -1,0 +1,30 @@
+<div class="container">
+
+
+    <div class="card">
+        <div class="card-header">
+            <h1 class="text-center">Detalles</h1>
+        </div>
+        <div class="card-body">          
+            <div class="mb-3">
+                <label class="form-label">Titulo:</label>
+                <span>{{DataLLamada[idConvert-1].title}}</span>
+            </div>        
+            <div class="mb-3">
+                <label class="form-label">UserId:</label>
+                <span>{{DataLLamada[idConvert-1].userId}}</span>
+            </div>            
+            <div class="mb-3">
+                <label class="form-label">Id:</label>
+                <span>{{idConvert}}</span>
+            </div>        
+            <div class="mb-3">
+                <label class="form-label">Estado:</label>
+                <span [ngClass]="DataLLamada[idConvert-1].completed? 'verdadero':'falso'" >{{DataLLamada[idConvert-1].completed}}</span>
+            </div>        
+            <div class="mb-3">
+              <button class="btn btn-primary px-5 d-block mx-auto" (click)="back()">Back</button>
+            </div>
+        </div>
+      </div>    
+  </div>
